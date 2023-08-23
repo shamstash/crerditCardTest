@@ -7,6 +7,10 @@
   font-weight: 500;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   background-image: url("images/bg-main-desktop.png");
   background-repeat: no-repeat;
