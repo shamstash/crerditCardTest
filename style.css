@@ -19,7 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
   font-size: 18px;
   background-size: 40% 100%; /* Adjusted background-size value */
 }
