@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="main">
+      <div id="cardsSection">
+        <div id="frontSide">
+          <object
+            data="images/card-logo.svg"
+            type="image/svg+xml"
+            style="margin-left: 35px; margin-top: 25px"
+          ></object>
+          <h2
+            style="margin-left: 35px; margin-top: 65px;"
+            id="cardNumberPrintOut"
+          ></h2>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              margin-top: 125px;
+              margin-left: 36px;
+              width: 411px;
+            "
+            id="nameAndExpiry"
+          >
+            <h4 id="cardNamePrintOut" style="text-transform: uppercase"></h4>
+            <h4 style="margin-right: 30px" id="expiryPrintOut">MM/YY</h4>
+          </div>
+        </div>
+        <div id="backSide">
+          <h4
+            style="margin-left: 351px; margin-top: 109px"
+            id="cvvPrintOut"
+          ></h4>
+        </div>
+      </div>
+      <div id="inputSection">
+        <h4 class="inputTitle">CARDHOLDER NAME</h4>
+        <input
+          type="text"
+          class="inputField"
+          style="margin-bottom: 40px; text-transform: uppercase"
+          id="cardName"
+          maxlength="22"
+        />
+        <h4 class="inputTitle">CARD NUMBER</h4>
+        <input
+          type="text"
+          class="inputField"
+          id="cardNumber"
+          style="margin-bottom: 50px"
+          maxlength="19"
+          placeholder="XXXX XXXX XXXX XXXX"
+        />
+
+        <div class="dateAndCvv" style="display: flex; margin-bottom: 35px">
+          <div id="expirySection">
+            <h4 class="inputTitle">EXP. DATE (MM/YY)</h4>
+            <input
+              type="text"
+              class="inputField"
+              style="width: 82.5px"
+              placeholder="MM"
+              maxlength="2"
+              id="expiryMonth"
+            />
+            <input
+              type="text"
+              class="inputField"
+              style="width: 82.5px; margin-left: 10px"
+              placeholder="YY"
+              maxlength="2"
+              id="expiryYear"
+            />
+          </div>
+          <div id="cvcSection" style="margin-left: 20px">
+            <h4 class="inputTitle">CVC</h4>
+            <input
+              type="text"
+              class="inputField"
+              style="width: 155px"
+              placeholder="e.g. 123"
+              maxlength="4"
+              id="cvvInput"
+            />
+          </div>
+        </div>
+
+        <button id="confirmButton" type="submit">Confirm</button>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body> 
+</html>
