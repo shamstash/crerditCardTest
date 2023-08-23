@@ -19,7 +19,6 @@ body {
   align-items: center;
   overflow: hidden;
   font-size: 18px;
-  height: 100vh;
   background-size: 40% 100%; /* Adjusted background-size value */
 }
 
